@@ -12,8 +12,3 @@
     refs.modal.classList.toggle("backdrop--is-hidden");
   }
 })();
-
-(() => {
-  const menubtnRef = document.querySelector("[data-menu-button");
-  
-})

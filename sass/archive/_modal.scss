@@ -1,0 +1,194 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 10;
+    @include transition (opacity);
+
+    &--is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+}
+.modal {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    opacity: 1;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $praymary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    @include transition (transform);
+
+    .backdrop--is-hidden & {
+        transform: scale(0.3);
+    }
+}
+
+.modal__titl {
+    max-width: 448px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin: 0 0 12px 0;
+}
+
+.form__field {
+    position: relative;
+    width: 448px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.form__label {
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $praymare-text-color;
+}
+
+.form__input {
+    width: 448px;
+    height: 40px;
+    padding: 11px 12px;
+    padding-left: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    @include transition (border);
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+        outline: 0;
+        border: 1px solid $logo-akcent-color;
+    }
+
+}
+
+.form__svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(0);
+}
+
+.form__ikon {
+    fill: $title-text-color;
+    @include transition (fill);
+
+    .form__input:focus~.form__svg &,
+    .form__input:hover~.form__svg & {
+        outline: 0;
+        fill: $logo-akcent-color;
+    }
+}
+
+
+
+
+.form__textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1, 17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form__textarea {
+    width: 448px;
+    height: 138px;
+    padding: 12px 16px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    @include transition (border);
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+        outline: 0;
+        border: 1px solid $logo-akcent-color;
+    }
+}
+
+
+.checkbox {
+    position: relative;
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %flexbox;
+}
+
+.checkbox__label {
+    margin-bottom: 30px;
+    min-width: 425px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-left: 9px;
+    @extend %flexbox;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox__svg {
+    margin-right: 7px;
+    border: 3px solid $title-text-color;
+    background-color: $praymary-background-color;
+    fill: $praymary-background-color;
+    @include transition (background-color);
+
+    .checkbox__input:checked~& {
+        fill: $praymary-background-color;
+        background-color: $logo-akcent-color;
+        border-color: $logo-akcent-color;
+        background-size: contain;
+    }
+}
+
+.checkbox-link {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $logo-akcent-color;
+}

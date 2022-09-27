@@ -1,0 +1,133 @@
+// блок фільтрів
+
+.list-filter {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    @extend %flexbox;
+
+    &__item {
+        margin-right: 8px;
+    }
+}
+
+.button-filter {
+    border: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    font-family: $font-Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    border-radius: 4px;
+    background-color: $button-background-color;
+    color: $title-text-color;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $logo-akcent-color;
+        color: $praymary-background-color;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+    }
+
+    .all {
+        min-width: 73px;
+    }
+
+    .web {
+        min-width: 125px;
+    }
+
+    .applications {
+        min-width: 112px;
+    }
+
+    .design {
+        min-width: 103px;
+    }
+
+    .marketing {
+        min-width: 130px;
+    }
+}
+
+.overlay-portfolio {
+    position: relative;
+    overflow: hidden;
+
+    &__titl {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+}
+.overlay-portfolio__previous {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    color: $praymary-background-color;
+    background-color: $logo-akcent-color;
+    transform: translateY(100%);
+    @include transition (transform);
+
+    .portfolio-list__item:hover &,
+    .portfolio-list__item:focus & {
+        transform: translateY(0);
+    }
+}
+.portfolio-list {
+    margin: 50px 0 0 0;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: 1.13%;
+
+}
+
+.portfolio-list__item {
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 16%), 0 4px 4px 0 rgba(0, 0, 0, 25%);
+        @include transition (box-shadow);
+    }
+}
+.portfolio-list__link {
+    text-decoration: none;
+}
+.portfolio-list__img {
+    display: block;
+}
+
+.portfolio-list__content {
+    padding: 20px 22px;
+    min-width: 322px;
+    border: 1px solid $portfolio-border-color;
+}
+.portfolio-list__titl {
+    margin: 0 0 4px 0;
+    min-width: 322px;
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-list__descr {
+    margin: 0;
+    min-width: 322px;
+    color: $praymare-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
+

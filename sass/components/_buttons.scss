@@ -1,0 +1,75 @@
+
+.title__button-site {
+    @extend %button-site;
+    padding: 10px 32px;
+    min-width: 216px;
+    @include transition (background-color);
+    
+    &:hover {
+        background-color: $button-active-color;
+        }
+}
+
+// .button-site-close {
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     padding: 6px;
+//     width: 30px;
+//     height: 30px;
+//     margin: 0;
+//     cursor: pointer;
+//     border-radius: 50%;
+//     background-color: $praymary-background-color;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+
+// }
+.form__button-site {
+    @extend %button-site;
+    padding: 10px 52px;
+    min-width: 200px;
+    @include transition (background-color);
+    
+    &:hover {
+        background-color: $button-active-color;
+       
+    }
+}
+
+
+.button-site-close__icon {
+    fill: carrentColor;
+    @include transition (fill);
+
+    .button-site-close:hover & {
+        fill: $logo-akcent-color;
+        }
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px){
+        display: none;
+        
+    }
+
+    &__icon-cross {
+        display: none;
+    }
+
+    &.is-open &__icon-cross {
+        display: block;
+    }
+
+    &.is-open &__icon-menu {
+        display: none;
+    }
+}
+

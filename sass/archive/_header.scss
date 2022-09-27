@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    letter-spacing: 0.03em;
+    font-family: $font-Roboto;
+    background-color: $praymary-background-color;
+    color: $praymare-text-color;
+}
+.header {
+    border-bottom: 1px solid $header-border-color;
+}
+
+
+
+.site-nav {
+    @extend %flexbox;
+}
+// навігація
+
+.nav-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    @extend %flexbox;
+    
+}
+
+.nav-list__item {
+    margin-right: 50px;
+
+    &--position {
+        margin-right: 0;
+    }
+}
+
+
+.nav-list__link {
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    text-decoration: none;
+    @include transition (color);
+
+    &--current {
+        position: relative;
+        color: $logo-akcent-color;
+        }
+    &--current::after {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: $logo-akcent-color;
+        border-radius: 2px;
+        bottom: 0;
+    }
+
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    color: $logo-akcent-color;
+}
+
+.nav-contact {
+    padding-left: 0;
+    margin-left: auto;
+    list-style: none;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    @extend %flexbox;
+
+    &__text {
+        margin: 0;
+    }
+}
+
+.nav-contact__item {
+    margin-right: 30px;
+}
+
+.nav-contact__link {
+    padding: 32px 0;
+    max-width: 161px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $praymare-text-color;
+    @include transition (color);
+    @extend %flexbox;
+
+}
+
+.nav-contact__icon {
+    margin-right: 10px;
+    fill: $praymare-text-color;
+    @include transition (fill);
+
+    .link:hover &,
+    .link:focus &,
+    .link:active & {
+        fill: $logo-akcent-color;
+    }
+
+}
+
+
+

@@ -75,15 +75,15 @@
     margin-top: 12px;
     margin-left: 93px;
 
-    @media screen and (max-width: 767px) {
-        max-width: 450px;
+    @media screen and (min-width: 480px), (max-width: 767px) {
+        width: 450px;
         height: 156px;
     }
 
 
     &__conteiner {
         @extend %flexbox;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px), (max-width: 767px) {
             display: block;
             align-items: center;
         }

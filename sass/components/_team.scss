@@ -1,0 +1,45 @@
+.titl-minor {
+    text-align: start;
+    @media (max-width: 767px) {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    }
+}
+
+.list__item--light-position {
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: $praymary-background-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    margin-right: 30px;
+    @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.list__item--light {
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: $praymary-background-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.titl-cardname {
+    margin: 30px 0 0 0;
+    min-width: 104px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $title-text-color;
+
+    &__text {
+        margin: 10px 0 16px 0;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+}

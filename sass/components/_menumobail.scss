@@ -5,14 +5,7 @@ body {
     background-color: $praymary-background-color;
     color: $praymare-text-color;
 }
-.container {
-    min-width: 320px;
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .header {
     border-bottom: 1px solid $header-border-color;
     & .container {
@@ -27,6 +20,7 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+
     @media (max-width: 767px) {
     & {
         display: none;
@@ -39,10 +33,12 @@ body {
         display: none;
     }
 }
+
 .nav-list__link {
     padding: 10px;
     color: inherit;
     text-decoration: none;
+
     .nav-list &:hover,
     .nav-list &:focus {
         text-decoration: underline;
@@ -63,7 +59,7 @@ body {
     border-radius: 50%;
     outline: none;
 
-   
+      
     @media (min-width: 768px) {
         & {
             display: none;
@@ -76,6 +72,14 @@ body {
         top: 16px;
         right: 16px;
         background-color: #fff;
+    }
+}
+
+.menu-toggle-icon--open {
+    fill: currentColor;
+
+    &:hover {
+        fill: $logo-akcent-color;
     }
 }
 
@@ -224,6 +228,8 @@ body {
 
 
 }
+
+
 
 
 

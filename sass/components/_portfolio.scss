@@ -1,7 +1,8 @@
 // блок фільтрів
 
 .container--adjustable {
-    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
     @media screen and (min-width: 480px), (max-width: 767px) {
         width: 450px;
     }
@@ -116,6 +117,10 @@
     flex-basis: 1.13%;
     @media screen and (min-width: 480px), (max-width: 767px) {
         margin-top: 29px;
+        display: block;
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
 }
@@ -127,6 +132,7 @@
         box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 16%), 0 4px 4px 0 rgba(0, 0, 0, 25%);
         @include transition (box-shadow);
     }
+
 }
 
 .portfolio-list__link {

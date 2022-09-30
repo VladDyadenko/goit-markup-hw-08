@@ -1,47 +1,4 @@
-body {
-    margin: 0;
-    letter-spacing: 0.03em;
-    font-family: $font-Roboto;
-    background-color: $praymary-background-color;
-    color: $praymare-text-color;
-}
 
-.header {
-    border-bottom: 1px solid $header-border-color;
-    & .container {
-        min-height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-}
-.nav-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-        }
-}
-
-.nav-contact {
-    @media (max-width: 767px) {
-        display: none;
-    }
-}
-
-.nav-list__link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-
-    .nav-list &:hover,
-    .nav-list &:focus {
-        text-decoration: underline;
-    }
-}
 .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -75,6 +32,7 @@ body {
 
 .menu-toggle-icon--open {
     fill: currentColor;
+    @include transition (fill);
 
     &:hover {
         fill: $logo-akcent-color;
@@ -105,7 +63,7 @@ body {
     z-index: 999;
 
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    @include transition (transform);
 
 
     &.is-open {
@@ -130,6 +88,7 @@ body {
     .mobile-menu__link--current {
         position: relative;
         color: $logo-akcent-color;
+
         &::after {
             display: block;
             position: absolute;
@@ -156,6 +115,7 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+
     &__link-tel {
         text-decoration: none;
         font-weight: 500;
@@ -164,6 +124,7 @@ body {
         letter-spacing: 0.02em;
         color: $logo-akcent-color;
     }
+
     &__link-mail {
         text-decoration: none;
         font-weight: 500;
@@ -171,22 +132,14 @@ body {
         line-height: 28px;
         letter-spacing: 0.02em;
         color: $praymare-text-color;
-        }
+    }
+
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
+
     &__item:last-child {
         margin-bottom: 64px;
-    }
-}
-
-
-.site-nav {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
     }
 }
 
@@ -226,34 +179,8 @@ body {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $logo-akcent-color;
-
-
 }
 
-.section--photo--background {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0;
-    background-color: $hero-background-color;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgHW4compr.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-bottom: 106px;
-    text-align: center;
-    position: relative;
-
-    @media screen and (max-width: 767px) {
-        // width: 480px;
-        height: 400px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 118px 0;
-
-    }
-
-}
 
 
 

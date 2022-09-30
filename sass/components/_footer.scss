@@ -63,10 +63,6 @@
     }
 }
 
-.contact-site__descr {
-    margin: 0;
-}
-
 // form footer
 
 .form-subscription {
@@ -78,6 +74,9 @@
     @media screen and (min-width: 480px), (max-width: 767px) {
         width: 450px;
         height: 156px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
     }
 
 
@@ -104,9 +103,6 @@
         overflow: hidden;
     }
 
-        @media screen and (max-width: 767px) {
-            margin: 0;
-        }
 }
 
 .form-subscription__input {

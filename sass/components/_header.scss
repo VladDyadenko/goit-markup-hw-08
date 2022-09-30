@@ -1,12 +1,6 @@
 .header {
     border-bottom: 1px solid $header-border-color;
 
-    & .container {
-        min-height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
 }
 .nav-list {
     display: flex;
@@ -14,32 +8,131 @@
     margin: 0;
     list-style: none;
 
+    &__item {
+        margin-right: 50px;
+
+        &--position {
+            margin-right: 0;
+        }
+    }
+
+
     @media screen and (max-width: 767px) {
         display: none;
     }
+
+
+
+
 }
 
 .nav-contact {
-    @media (max-width: 767px) {
+    list-style: none;
+
+
+    &__icon {
+        margin-right: 10px;
+        fill: $praymare-text-color;
+        @include transition (fill);
+
+        .link:hover &,
+        .link:focus &,
+        .link:active & {
+            fill: $logo-akcent-color;
+        }
+
+    }
+
+    
+    @media screen and (min-width: 768px),
+     (max-width: 1199px) {
+        margin: 0 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+
+    }
+
+    @media screen and (max-width: 767px) {
         display: none;
+    }
+
+    @media (max-width: 1199px) {
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $praymare-text-color;
+        text-decoration: none;
+    }    
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    @media screen and (min-width: 768px),
+    (max-width: 1199px) {
+
+        &__item--position {
+            margin-top: 10px;
+        }
+        
     }
 }
 
 .nav-list__link {
-    padding: 10px;
-    color: inherit;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
     text-decoration: none;
+    @include transition (color);
 
-    .nav-list &:hover,
-    .nav-list &:focus {
-        text-decoration: underline;
+    &--current {
+        position: relative;
+        color: $logo-akcent-color;
     }
+
+    &--current::after {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: $logo-akcent-color;
+        border-radius: 2px;
+        bottom: 0;
+    }
+
 }
+
 .site-nav {
+
+    @media screen and (min-width: 768px),
+    (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     @media screen and (max-width: 767px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
     }
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    color: $logo-akcent-color;
 }

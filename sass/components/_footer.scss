@@ -66,7 +66,7 @@
 // form footer
 
 .form-subscription {
-    width: 570px;
+    // width: 570px;
     height: 86px;
     margin-top: 12px;
     margin-left: 93px;
@@ -117,7 +117,7 @@
     @include transition (filter);
 
     @media screen and (max-width: 767px) {
-        min-width: 450px;
+        max-width: 450px;
         margin-right: 0;
         margin-bottom: 20px;
     }

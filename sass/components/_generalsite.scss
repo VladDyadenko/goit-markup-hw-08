@@ -38,18 +38,24 @@ body {
     background-color: $hero-background-color;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgHW4compr.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: 106px;
     text-align: center;
     position: relative;
 
+    @media screen and (min-width: 768px), (max-width: 1199px) {
+        height: 768px;
+        padding: 118px 0;
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width: 480px), (max-width: 767px) {
         height: 400px;
         padding: 118px 0;
         margin-bottom: 60px;
-
     }
+
 
 }
 
@@ -62,18 +68,32 @@ body {
     margin-right: auto;
 
     &--flex {
-            @extend %flexbox;
+        @extend %flexbox;
+
+        @media screen and (min-width: 768px),
+            (max-width: 1199px) {
+                justify-content: flex-start;
         }
+        @media screen and (min-width: 480px),
+            (max-width: 767px) {
+            min-height: 60px;
+            justify-content: flex-end;
+        }
+
+
+
+
+    }
     
     &--reduction {
         padding-top: 0;
         padding-bottom: 0;
+
         @media screen and (min-width: 480px), (max-width: 767px) {
             width: 480px;
         }
 
     }
-
      
     &--decrease {
         display: flex;
@@ -125,6 +145,12 @@ body {
         margin: 0;
         padding: 0;
     }
+    // @media screen and (min-width: 768px), (max-width: 1199px) {
+    //     display: flex;
+    //     width: 768px;
+    //     margin: 0;
+    //     padding: 0;
+    // }
 
     &__item--position {
         margin-right: 30px;
@@ -158,7 +184,7 @@ body {
         color: $title-text-color;
 
         @media screen and (min-width: 480px), (max-width: 767px) {
-            min-width: 450px;
+            width: 450px;
             text-align: center;
         }
     }

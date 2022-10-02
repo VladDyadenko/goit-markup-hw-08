@@ -63,58 +63,62 @@
   <main>
     <!-- Головна частина -->
     <section class="section section--photo--background">
-      <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-      <button type="submit" class="button-site title__button-site" data-modal-open>
-        Замовити послугу
-      </button>
-      <div class="backdrop backdrop--is-hidden" data-modal>
-        <div class="modal">
-          <h2 class="modal__titl">Залиште свої дані, ми вам передзвонимо</h2>
-          <form class="form">
-            <div class="form__field">
-              <label for="userdescr" class="form__label">Ім'я</label>
-              <input class="form__input" id="userdescr" type="text" name="username" />
-              <svg class="form__svg" width="18" height="18">
-                <use class="form__ikon" href="./images/icons.svg#person-black"></use>
-              </svg>
-            </div>
-            <div class="form__field">
-              <label for="usertel" class="form__label">Телефон</label>
-              <input class="form__input" id="usertel" type="tel" name="tel" />
-              <svg class="form__svg" width="18" height="18">
-                <use class="form__ikon" href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </div>
-            <div class="form__field">
-              <label for="usermail" class="form__label">Пошта</label>
-              <input class="form__input" id="usermail" type="email" name="email" />
-              <svg class="form__svg" width="18" height="18">
-                <use class="form__ikon" href="./images/icons.svg#email-black"></use>
-              </svg>
-            </div>
-            <div class="form__field">
-              <label for="userfeedback" class="form__label">Коментар </label>
-              <textarea class="form__textarea" id="userfeedback" name="feedback" placeholder="Введіть текст"></textarea>
-              <div class="checkbox">
-                <label class="checkbox__label" for="userbox">
-                  <input class="checkbox__input" id="userbox" type="checkbox" name="license" />
-                  <svg class="checkbox__svg" width="16" height="15">
-                    <use class="checkbox__ikon" href="./images/icons.svg#check"></use>
-                  </svg>
-                  Погоджуюся з розсилкою та приймаю
-                  <a class="checkbox-link" href="">Умови договору</a></label>
+      <div class="container">
+        <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="submit" class="button-site title__button-site" data-modal-open>
+          Замовити послугу
+        </button>
+        <div class="backdrop backdrop--is-hidden" data-modal>
+          <div class="modal">
+            <h2 class="modal__titl">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form">
+              <div class="form__field">
+                <label for="userdescr" class="form__label">Ім'я</label>
+                <input class="form__input" id="userdescr" type="text" name="username" />
+                <svg class="form__svg" width="18" height="18">
+                  <use class="form__ikon" href="./images/icons.svg#person-black"></use>
+                </svg>
               </div>
-            </div>
+              <div class="form__field">
+                <label for="usertel" class="form__label">Телефон</label>
+                <input class="form__input" id="usertel" type="tel" name="tel" />
+                <svg class="form__svg" width="18" height="18">
+                  <use class="form__ikon" href="./images/icons.svg#phone-black"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="usermail" class="form__label">Пошта</label>
+                <input class="form__input" id="usermail" type="email" name="email" />
+                <svg class="form__svg" width="18" height="18">
+                  <use class="form__ikon" href="./images/icons.svg#email-black"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="userfeedback" class="form__label">Коментар </label>
+                <textarea class="form__textarea" id="userfeedback" name="feedback"
+                  placeholder="Введіть текст"></textarea>
+                <div class="checkbox">
+                  <label class="checkbox__label" for="userbox">
+                    <input class="checkbox__input" id="userbox" type="checkbox" name="license" />
+                    <svg class="checkbox__svg" width="16" height="15">
+                      <use class="checkbox__ikon" href="./images/icons.svg#check"></use>
+                    </svg>
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="checkbox-link" href="">Умови договору</a></label>
+                </div>
+              </div>
 
-            <button class="button-site form__button-site" type="submit">Відправити</button>
-          </form>
-          <button class="button-site-close" type="submit" data-modal-close>
-            <svg class="button-site-close__icon" width="11" height="11">
-              <use class="" href="./images/icons.svg#Vectorx"></use>
-            </svg>
-          </button>
+              <button class="button-site form__button-site" type="submit">Відправити</button>
+            </form>
+            <button class="button-site-close" type="submit" data-modal-close>
+              <svg class="button-site-close__icon" width="11" height="11">
+                <use class="" href="./images/icons.svg#Vectorx"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
+
     </section>
     <!-- Переваги компанії-->
     <section>
@@ -467,8 +471,8 @@
       </div>
 
       <form class="form-subscription">
-        <h2 class="footer-titl">Підпишіться на розсилку</h2>
         <div class="form-subscription__conteiner">
+          <h2 class="footer-titl">Підпишіться на розсилку</h2>
           <label class="form-subscription__label" for="footer-subscription">email for subscription</label>
           <input class="form-subscription__input" id="footer-subscription" type="text" name="subscription"
             placeholder="E-mail" />

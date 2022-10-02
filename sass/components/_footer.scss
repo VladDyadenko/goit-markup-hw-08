@@ -2,27 +2,28 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: $footer-color;
-    @media screen and (max-width: 767px) {
-        padding-top: 44px;
-    }
+    height: 603px;
+    // @media screen and (max-width: 767px) {
+    //     padding-top: 44px;
+    // }
 }
 
 .footer__contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
 
-    @media (max-width: 767px) {
-        margin-right: 0;
-        margin-bottom: 60px;
+    // @media (max-width: 767px) {
+    //     margin-right: 0;
+    //     margin-bottom: 60px;
 
-    }
+    // }
 }
 
 .footer__social {
-    margin-top: 12px;
+    margin-top: 60px;
     height: 80px;
-    @media screen and (max-width: 767px) {
-        margin: 0 0 60px 0;
-    }
+    // @media screen and (max-width: 767px) {
+    //     margin: 0 0 60px 0;
+    // }
 }
 
 .footer-titl {
@@ -30,6 +31,15 @@
     color: $praymary-background-color;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.contact-site {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .contact-site__list {
@@ -38,19 +48,30 @@
     list-style: none;
 }
 
-.contact-site__item {
-    margin-bottom: 9px;
-    min-width: 231px;
+.contact-site__descr {
+    margin: 0;
     font-size: 14px;
     line-height: 1.7;
-    font-style: normal;
+    letter-spacing: 0.03em;
+    text-align: center;
     color: $praymary-background-color;
 }
 
+.contact-site__item {
+    min-width: 231px;
+  
+}
+
 .contact-site__link {
+    margin-top: 8px;
     display: block;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
     @include transition (color);
 
     &--geometry {
@@ -69,23 +90,26 @@
     // width: 570px;
     height: 86px;
     margin-top: 12px;
-    margin-left: 93px;
+    // margin-left: 93px;
 
-    @media screen and (min-width: 480px), (max-width: 767px) {
-        width: 450px;
-        height: 156px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-    }
+    // @media screen and (min-width: 480px) and (max-width: 767px) {
+    //     width: 450px;
+    //     height: 156px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-top: 0;
+    // }
 
 
     &__conteiner {
-        @extend %flexbox;
-        @media screen and (min-width: 480px), (max-width: 767px) {
-            display: block;
-            align-items: center;
-        }
+        margin-top: 60px;
+
+
+        // @extend %flexbox;
+        // @media screen and (min-width: 480px) and (max-width: 767px) {
+        //     display: block;
+        //     align-items: center;
+        // }
 
     }
 
@@ -106,21 +130,21 @@
 }
 
 .form-subscription__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
     border-radius: 4px;
     background-color: $footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     @include transition (filter);
 
-    @media screen and (max-width: 767px) {
-        max-width: 450px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+    // @media screen and (max-width: 767px) {
+    //     max-width: 450px;
+    //     margin-right: 0;
+    //     margin-bottom: 20px;
+    // }
 
     &:focus-visible,
     &:focus {

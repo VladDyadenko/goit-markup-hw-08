@@ -41,15 +41,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 60px;
     text-align: center;
     position: relative;
 
-    // @media screen and (min-width: 480px) and (max-width: 1199px) {
-    //     height: 400px;
-    //     padding: 118px 0;
-    //     margin-bottom: 60px;
-    // }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        height: 400px;
+        padding: 118px 60px;
+    }
 
 
 }
@@ -88,6 +86,9 @@ body {
     }
      
     &--decrease {
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 480px;
+        }
         // display: flex;
         // padding-top: 0;
         // padding-bottom: 0;
@@ -97,6 +98,14 @@ body {
         //     text-align: center;
         // }
         
+    }
+
+    &--adjustable {
+        padding-top: 0;
+        padding-bottom: 0;
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 480px;
+        }
     }
     
 }
@@ -115,8 +124,8 @@ body {
     font-size: 26px;
     line-height: 1.62;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 480px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 360px;
     }
 
     // @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -154,9 +163,11 @@ body {
 
     &__item--position {
        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+
         // @media screen and (min-width: 480px) and  (max-width: 767px) {
-        //     margin-right: 0;
-        //     margin-bottom: 30px;
+
         // }
         // @media screen and (min-width: 768px) and (max-width: 1199px) {
         //     margin-bottom: 0;
@@ -222,11 +233,11 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        // @media screen and (min-width: 480px) and
-        //     (max-width: 767px) {
-        //     width: 450px;
-        //     height: 460px;
-        // }
+
+        @media screen and (min-width: 480px) and
+            (max-width: 767px) {
+            height: 460px;
+        }
     }
               
 

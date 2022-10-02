@@ -1,22 +1,32 @@
 // блок фільтрів
 
-.container--adjustable {
-    padding-top: 0;
-    padding-bottom: 0;
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //     width: 450px;
-    // }
-}
+
 .list-filter {
     margin: 0;
     padding-left: 0;
     list-style: none;
+    width: 100%;
     @extend %flexbox;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 326px;
+        justify-content: flex-start;
+
+        :nth-child(n+4) {
+            margin-bottom: 0;
+        }
+        
+        :nth-child(2n+3) {
+            margin-right: 0;
+        }
+}
 
     &__item {
-        margin-right: 8px;
+        margin-bottom: 15px;
+
         @media screen and (min-width: 480px) and (max-width: 767px) {
-            margin-bottom: 15px;
+            margin-right: 8px;
         }
         
     }
@@ -108,9 +118,10 @@
 }
 
 .portfolio-list {
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
     list-style: none;
     padding-left: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -126,6 +137,7 @@
 }
 
 .portfolio-list__item {
+    width: 100%;
 
     &:hover,
     &:focus {
@@ -141,20 +153,21 @@
 
 .portfolio-list__img {
     display: block;
+    width: 100%;
     // @media screen and (min-width: 480px) and (max-width: 767px) {
     //     width: 450px;
     // }
 }
 
 .portfolio-list__content {
-    padding: 20px 22px;
-    min-width: 322px;
+    padding: 20px 24px;
+    width: 100%;
     border: 1px solid $portfolio-border-color;
 }
 
 .portfolio-list__titl {
     margin: 0 0 4px 0;
-    min-width: 322px;
+    width: 100%;
     color: $title-text-color;
     font-size: 18px;
     line-height: 2.0;
@@ -163,7 +176,7 @@
 
 .portfolio-list__descr {
     margin: 0;
-    min-width: 322px;
+    width: 100%;
     color: $praymare-text-color;
     font-size: 16px;
     line-height: 1.88;

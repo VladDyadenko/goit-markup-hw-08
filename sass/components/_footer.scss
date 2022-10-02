@@ -172,5 +172,8 @@
 .footer__button-site {
     @extend %button-site;
     padding: 10px 28px;
-    width: 200px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 200px;
+    }
 }

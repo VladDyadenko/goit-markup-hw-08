@@ -148,15 +148,7 @@
 .site-nav {
     display: flex;
     justify-content: space-between;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        align-items: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-        align-items: center;
-    }
-
+    align-items: center;
 
 }
 

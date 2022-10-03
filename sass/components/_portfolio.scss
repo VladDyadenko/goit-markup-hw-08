@@ -1,6 +1,5 @@
 // блок фільтрів
 
-
 .list-filter {
     margin: 0;
     padding-left: 0;
@@ -140,6 +139,7 @@
 
 .portfolio-list__item {
     width: 100%;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
     }
@@ -162,9 +162,6 @@
 .portfolio-list__img {
     display: block;
     width: 100%;
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //     width: 450px;
-    // }
 }
 
 .portfolio-list__content {
@@ -178,9 +175,8 @@
             padding: 20px 24px;
         }
     }
-        
-
-        
+     
+       
 }
 
 .portfolio-list__titl {

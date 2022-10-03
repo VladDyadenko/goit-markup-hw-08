@@ -88,7 +88,7 @@ body {
             align-items: center;
             justify-content: space-between;
             height: 80px;
-    }
+        }
 
     }
     
@@ -120,9 +120,8 @@ body {
             display: flex;
             padding-top: 0;
             padding-bottom: 0;
-    }
-
-        
+        }
+       
     }
 
     &--adjustable {
@@ -177,7 +176,6 @@ body {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
         padding: 0;
         gap: 30px;
     }

@@ -58,10 +58,6 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
     margin: 0 0 12px 0;
-
-    // @media screen and (max-width: 480px) {
-    //     width: 370px;
-    //     }
     
 }
 
@@ -78,9 +74,6 @@
         margin-bottom: 30px;
     }
 
-    // @media screen and (min-width: 480px) and (max-width: 1199px) {
-    //     width: 370px;
-    // }
 }
 
 .form__label {
@@ -110,9 +103,6 @@
         outline: 0;
         border: 1px solid $logo-akcent-color;
     }
-    // @media screen and (min-width: 480px)  and (max-width: 1199px) {
-    //     width: 370px;
-    // }
 
 }
 
@@ -161,9 +151,6 @@
         outline: 0;
         border: 1px solid $logo-akcent-color;
     }
-    // @media screen and (min-width: 480px)  and (max-width: 1199px) {
-    //     width: 370px;
-    // }
 }
 
 
@@ -174,15 +161,9 @@
     margin-right: auto;
     @extend %flexbox;
 
-    // @media screen and (max-width: 480px) {
-    // width: 370px;
-    // justify-content: flex-start;
-    // margin-bottom: 30px;
-    // }
 }
 
 .checkbox__label {
-    // margin-bottom: 30px;
     width: 100%;
     font-size: 12px;
     line-height: 1.17;
@@ -194,23 +175,6 @@
         font-size: 14px;
         line-height: 1.7;
     }
-
-    // @media screen and (min-width: 480px) and
-    //     (max-width: 1199px) {
-    //     width: 370px;
-    //     margin: 0;
-    //     justify-content: flex-start;
-    //     font-size: 12px;
-    //     line-height: 1.17;
-    // }
-
-    // @media screen and (max-width: 480px) {
-    //     min-width: 370px;
-    //     margin: 0;
-    //     justify-content: flex-start;
-    //     font-size: 12px;
-    //     line-height: 1.17;
-    //     }
 }
 
 .checkbox__input {
@@ -258,7 +222,5 @@
         font-size: 14px;
         line-height: 1.7;
     }
-
-
     
 }

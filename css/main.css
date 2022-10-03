@@ -467,20 +467,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .link:hover,
@@ -698,7 +687,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0;
     padding: 0;
     gap: 30px;
   }
@@ -1295,9 +1283,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 .list-clients__item {

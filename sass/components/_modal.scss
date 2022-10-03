@@ -44,6 +44,10 @@
         height: 609px;
         padding: 39px 40px 41px 40px;
     }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__titl {
@@ -186,6 +190,11 @@
     margin-left: 9px;
     @extend %flexbox;
 
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
     // @media screen and (min-width: 480px) and
     //     (max-width: 1199px) {
     //     width: 370px;
@@ -244,7 +253,12 @@
     @media screen and (max-width: 480px) {
         font-size: 12px;
         line-height: 1.17;
-        }
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
 
     
 }

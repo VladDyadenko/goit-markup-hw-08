@@ -1,4 +1,7 @@
 .footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
     background: $footer-color;
@@ -7,9 +10,10 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         height: 463px;
     }
-    // @media screen and (max-width: 767px) {
-    //     padding-top: 44px;
-    // }
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+    }
+
 }
 
 .footer__contacts {
@@ -17,13 +21,10 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 165px;
     }
-    // margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 64px;
+    }
 
-    // @media (max-width: 767px) {
-    //     margin-right: 0;
-    //     margin-bottom: 60px;
-
-    // }
 }
 
 .footer__social {
@@ -32,10 +33,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 0;
     }
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+        margin-right: 93px;
+    }
 
-    // @media screen and (max-width: 767px) {
-    //     margin: 0 0 60px 0;
-    // }
 }
 
 .footer-titl {
@@ -46,6 +48,10 @@
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .contact-site {
@@ -67,10 +73,14 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $praymary-background-color;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .contact-site__item {
     min-width: 231px;
+    font-style: normal;
   
 }
 
@@ -94,39 +104,35 @@
     &:focus {
         color: $logo-akcent-color;
     }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 // form footer
 
 .form-subscription {
     height: 86px;
-    margin-top: 12px;
+    margin-top: 60px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 0;
+    @media screen and (min-width: 1199px) {
+        margin-top: 12px;
     }
 
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //     width: 450px;
-    //     height: 156px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-top: 0;
-    // }
-
-
     &__conteiner {
-        margin-top: 60px;
+        margin-top: 20px;
+
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 450px;;
+            width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 570px;
         }
 
-
-        // @extend %flexbox;
-        // @media screen and (min-width: 480px) and (max-width: 767px) {
-        //     display: block;
-        //     align-items: center;
-        // }
 
     }
 
@@ -157,11 +163,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     @include transition (filter);
 
-    // @media screen and (max-width: 767px) {
-    //     max-width: 450px;
-    //     margin-right: 0;
-    //     margin-bottom: 20px;
-    // }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 12px;
+
+    }
+
 
     &:focus-visible,
     &:focus {

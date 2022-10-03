@@ -5,12 +5,16 @@
 
     @media screen and (min-width: 480px) and (max-width: 1199px) {
         min-width: 200px;
-
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 216px;
+        padding: 10px 32px;
     }
 
     &:hover {
         background-color: $button-active-color;
     }
+
 }
 .button-site-close {
     position: absolute;

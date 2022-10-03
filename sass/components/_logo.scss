@@ -1,9 +1,6 @@
-.logo {
-    display: inline-block;
-    // margin-right: 93px;
+.logo-header {
+    display: block;
     margin-left: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
     font-family: $font-Releway;
     color: $title-text-color;
     font-weight: 700;
@@ -11,37 +8,62 @@
     line-height: 1.17;
     text-decoration: none;
 
-    &__text {
-        margin: 0;
+  
+    @media screen and (max-width: 767px) {
+        padding: 16px 0 16px 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 26px 0 26px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.2;
+        padding: 24px 0 25px 0;
+
     }
 
     &--blue {
         color: $logo-akcent-color;
     }
 
-    &--position {
-    display: block;
-    padding: 0;
-    margin-bottom: 20px;
-    text-align: center;
-       
+    &__text {
+        margin: 0;
     }
 
+
+}
+
+.logo-footer {
+    display: block;
+    margin-left: 0;
+    font-family: $font-Releway;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    &--position {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    &__text {
+        margin: 0;
+    }
     &__text--white {
         color: $praymary-background-color;
     }
 
-
-    // @media screen and (max-width: 767px) {
-    //     font-size: 24px;
-    //     line-height: 1.17;
-    //     margin: 0;
-    //     padding: 16px 0;
-
-    // }
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //     margin-right: 87px;
-    //     padding: 26px 0;
-    // }
+    &--blue {
+        color: $logo-akcent-color;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+        text-align: left;
+    }
 
 }

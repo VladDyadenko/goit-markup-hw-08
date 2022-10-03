@@ -4,17 +4,13 @@
     @include transition (background-color);
 
     @media screen and (min-width: 480px) and (max-width: 1199px) {
-        min-width: 200px;
-    }
-    @media screen and (min-width: 1200px) {
-        min-width: 216px;
-        padding: 10px 32px;
+
+
     }
 
     &:hover {
         background-color: $button-active-color;
     }
-
 }
 .button-site-close {
     position: absolute;
@@ -34,11 +30,6 @@
 .form__button-site {
     @extend %button-site;
     padding: 10px 52px;
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-        min-width: 200px;
-
-    }
-
 
     @include transition (background-color);
 

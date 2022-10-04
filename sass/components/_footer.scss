@@ -196,6 +196,11 @@
 .footer__button-site {
     @extend %button-site;
     padding: 10px 28px;
+    @include transition (background-color);
+
+    &:hover {
+        background-color: $button-active-color;
+    }
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 200px;

@@ -524,21 +524,51 @@ body {
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/ImgHW4compr.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgHW4compr.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  height: 400px;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .section--photo--background {
-    height: 400px;
+    width: 480px;
+    background-size: 480px 400px;
     padding: 118px 60px;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .section--photo--background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgimg480opt.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimg480opt.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section--photo--background {
+    width: 768px;
+    background-size: 768px 400px;
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .section--photo--background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgimg768opt.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimg768opt.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .section--photo--background {
     padding: 200px 0;
+    width: 1200px;
+    height: 600px;
+    background-size: 1200px 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section--photo--background {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgimg1600opt.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimg1600opt.jpg);
   }
 }
 
@@ -1625,7 +1655,7 @@ body {
 .list-filter__item {
   margin-bottom: 15px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .list-filter__item {
     margin-right: 8px;
   }

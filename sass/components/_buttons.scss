@@ -3,9 +3,8 @@
     padding: 10px 24px;
     @include transition (background-color);
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-
-
+    @media screen and (min-width: 1200px) {
+        width: 216px;
     }
 
     &:hover {
